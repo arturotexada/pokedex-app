@@ -1,5 +1,12 @@
-.App {
+*{
+  box-sizing: boarder-box;
   text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, 
+  Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans Mono', monospace,'Helvetica Neue', sans-serif
+}
+
+.App {
+  padding: 70px;   //text-align: center;
 }
 
 .App-logo {
@@ -12,6 +19,83 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+.welcome-message{
+  margin-bottom: 20px;
+}
+
+li{
+  margin-bottom: 5px;
+}
+
+.pokemon-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.pokemon-list .col{
+  padding: 10px;
+  width: 25%
+}
+
+.pokemon-card img{
+  margin-bottom: 40px;
+  width: 15%;
+  padding: 10px;
+}
+
+
+.pokemon-card {
+  text-decoration: none;
+  color: #000;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, .3);
+  display: block;
+  padding: 10px;
+  border-radius: 9px;
+  height: 100%;
+}
+
+
+.App-link {
+  color: #61dafb;
+}
+
+.pokemon-card{
+  text-decoration: none;
+  }
+
+  @media (min-width: 492px) {
+    .characters-list .col {
+      width: 50%;
+    }
+  }
+  
+  @media (min-width: 728px) {
+    .characters-list .col {
+      width: 33.3333%;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .characters-list .col {
+      width: 25%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .characters-list .col {
+      width: 20%;
+    }
+  }
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 
 .App-header {
   background-color: #282c34;
@@ -22,17 +106,4 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
